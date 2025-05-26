@@ -1,6 +1,6 @@
 # Kerning Convertor
 
-This is a python script to convert kerning data in ADKFD features.fea format to ufo groups.plist and kerning.plist format.
+This is a python script to convert kerning data in [AFDKO](https://github.com/adobe-type-tools/afdko) features.fea format to [UFO](https://github.com/unified-font-object/ufo-spec) groups.plist and kerning.plist format.
 
 ## usage
 * Clone this repository 
