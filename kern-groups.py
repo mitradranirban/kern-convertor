@@ -45,7 +45,7 @@ def extract_and_write_kerning_groups(fea_file_path: str, output_plist_path: str)
                     
                     # Extract glyph names
                     if hasattr(glyph_class_def, 'glyphs'):
-                        glyph_list = [g.name if hasattr(g, 'name') else str(g) for g in glyph_class_def.glyphs]
+                        glyph_list = [g.name.lstrip("\\") if hasattr(g, 'name') else str(g).lstrip("\\") for g in glyph_class_def.glyphs]
                     else:
                         glyph_list = list(glyph_class_def)
 
